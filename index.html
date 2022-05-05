@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <h1>Registration form</h1>
+        <form name="form" method="post">
+            <div class="wrap-input">
+                <label for="input-firstname">First name:</label>
+                <input id="input-firstname" type="text" required>
+                <span></span>
+            </div>
+            <div class="wrap-input">
+                <label for="input-lastname">Last name:</label>
+                <input id="input-lastname" type="text" required>
+                <span></span>
+            </div>
+            <div class="wrap-input">
+                <label for="input-age">Age:</label>
+                <input id="input-age" type="text" required>
+                <span></span>
+            </div>
+            <div class="wrap-input">
+                <label for="input-email">Email:</label>
+                <input id="input-email" type="email" required>
+                <span></span>
+            </div>
+            <div class="outer-wrap">
+                <div class="wrap-input">
+                    <label for="input-password">Password:</label>
+                    <input id="input-password" type="password" required>
+                    <span></span>
+                </div>
+                <div class="wrap-input">
+                    <label for="input-confirmpassword">Confirm password:</label>
+                    <input id="input-confirmpassword" type="password" required>
+                    <span></span>
+                </div>
+            </div>
+            <div class="outer-wrap">
+                <div class="wrap-input">
+                    <label for="input-male">Male:</label>
+                    <input id="input-male" name="gender" type="radio" value="Male">
+                </div>
+                <div class="wrap-input">
+                    <label for="input-female">Female:</label>
+                    <input id="input-female" name="gender" type="radio" value="Female">
+                </div>
+            </div>
+            <div class="outer-wrap">
+                <input type="reset" value="Input reset">
+                <button id="cancel" type="reset">Cancel</button>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
