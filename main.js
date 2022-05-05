@@ -74,6 +74,12 @@ form.addEventListener('click', function(e) {
         }
     }
 
+    if (e.target === cancelBtn) {
+        const inputs = Array.from(form.querySelectorAll('.filling-input'));
+        inputs.map(el => console.log(el.value));
+        inputs.map(el => el.value = '');
+    }
+
     if (e.target === submitBtn) {
         const newUser = new Person(firstName.value, lastName.value, age.value, email.value, gender);
         localStorage.setItem('newUser', JSON.stringify(newUser));
