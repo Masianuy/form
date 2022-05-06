@@ -48,11 +48,6 @@ input {
     border-radius: 4px;
 }
 
-input[type=reset] {
-    background-color: #680e0e;
-    color: #ffffff;
-}
-
 input[type=radio] {
     width: 15px;
     height: 15px;

@@ -10,43 +10,43 @@
 <body>
     <main>
         <h1>Registration form</h1>
-        <form name="form" method="post">
+        <form id="form" name="form" method="post">
             <div class="wrap-input">
                 <label for="input-firstname">First name:</label>
-                <input id="input-firstname" class="filling-input" type="text" required>
+                <input id="input-firstname" class="filling-input" name="firstName" type="text" required>
                 <span></span>
             </div>
             <div class="wrap-input">
                 <label for="input-lastname">Last name:</label>
-                <input id="input-lastname" class="filling-input" type="text" required>
+                <input id="input-lastname" class="filling-input" name="lastName" type="text" required>
                 <span></span>
             </div>
             <div class="wrap-input">
                 <label for="input-age">Age:</label>
-                <input id="input-age" class="filling-input" type="text" required>
+                <input id="input-age" class="filling-input" name="age" type="text" required>
                 <span></span>
             </div>
             <div class="wrap-input">
                 <label for="input-email">Email:</label>
-                <input id="input-email" class="filling-input" type="email" required>
+                <input id="input-email" class="filling-input" name="email" type="email" required>
                 <span></span>
             </div>
             <div class="outer-wrap">
                 <div class="wrap-input">
                     <label for="input-password">Password:</label>
-                    <input id="input-password" class="filling-input" type="password" required>
+                    <input id="input-password" type="password" required>
                     <span></span>
                 </div>
                 <div class="wrap-input">
                     <label for="input-confirmpassword">Confirm password:</label>
-                    <input id="input-confirmpassword" class="filling-input" type="password" required>
+                    <input id="input-confirmpassword" type="password" required>
                     <span></span>
                 </div>
             </div>
             <div class="outer-wrap">
                 <div class="wrap-input">
                     <label for="input-male">Male:</label>
-                    <input id="input-male" name="gender" class="filling-input" type="radio" value="Male">
+                    <input id="input-male" name="gender" class="filling-input" type="radio" value="Male" checked="true">
                 </div>
                 <div class="wrap-input">
                     <label for="input-female">Female:</label>
@@ -54,7 +54,6 @@
                 </div>
             </div>
             <div class="outer-wrap">
-                <input type="reset" value="Input reset">
                 <button id="cancel" type="reset">Cancel</button>
                 <button id="submit" type="submit">Submit</button>
             </div>
